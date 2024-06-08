@@ -1,0 +1,11 @@
+pythainlp
+transformers
+sentence_transformers
+uvicorn
+fastapi
+torch
+pandas
+gdown
+faiss-cpu
+jinja2
+# to install run "pip install -r requirements.txt"

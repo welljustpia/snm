@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SNOMED-CT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <p>
+        {{ name }}
+    </p>
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Text</th>
+            <th>Query</th>
+            <th>ConceptID</th>
+            <th>Term</th>
+            <th>Type</th>
+        </tr>
+        {% for dog in dogs %}
+        <tr>
+            <td>
+                {{dog.id}}
+            </td>
+            <td>
+                {{dog.Text}}
+            </td>
+            <td>{{dog.query}}</td>
+            <td>{{dog.conceptId}}</td>
+            <td>{{dog.term}}</td>
+            <td>{{dog.type}}</td>
+            {%endfor%}
+        </tr>
+    </table>
+</body>
+</html>
